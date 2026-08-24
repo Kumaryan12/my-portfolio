@@ -58,7 +58,7 @@ export function Hero({ onOpenPalette }: { onOpenPalette?: () => void }) {
             <div 
               onClick={handleNextImage}
               className="relative grid size-20 shrink-0 place-items-center overflow-hidden rounded-xl border border-[var(--line)] bg-[var(--chip)] shadow-md group cursor-pointer select-none animate-fade-up"
-              title="Click to change profile image"
+              title={site.profileImages.length > 1 ? "Click to change profile image" : site.name}
             >
               {/* Main Avatar Image */}
               <img
@@ -75,16 +75,18 @@ export function Hero({ onOpenPalette }: { onOpenPalette?: () => void }) {
               </div>
 
               {/* Switch image icon */}
-              <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  handleNextImage();
-                }}
-                className="absolute right-1 top-1 rounded-full border border-[var(--line)] bg-[var(--chip)] p-1 text-[var(--muted)] transition-all hover:text-[var(--fg)] hover:scale-110 sm:opacity-100 opacity-0 group-hover:opacity-100 z-20 cursor-pointer shadow-sm"
-                aria-label="Switch profile image"
-              >
-                <RotateCw size={10} strokeWidth={2} />
-              </button>
+              {site.profileImages.length > 1 && (
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleNextImage();
+                  }}
+                  className="absolute right-1 top-1 rounded-full border border-[var(--line)] bg-[var(--chip)] p-1 text-[var(--muted)] transition-all hover:text-[var(--fg)] hover:scale-110 sm:opacity-100 opacity-0 group-hover:opacity-100 z-20 cursor-pointer shadow-sm"
+                  aria-label="Switch profile image"
+                >
+                  <RotateCw size={10} strokeWidth={2} />
+                </button>
+              )}
             </div>
             <div>
               <h1 className="font-serif text-3xl sm:text-[38px] leading-none tracking-tight text-[var(--fg)] text-glitch">

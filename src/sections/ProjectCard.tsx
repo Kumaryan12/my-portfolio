@@ -33,40 +33,16 @@ export function ProjectCard({ project: p, index = 0 }: { project: Project; index
             </div>
           </div>
 
-          {/* Top Badges Row */}
-          <div className="relative z-20 flex items-center justify-between gap-2">
-            <div className="flex items-center gap-2">
-              {p.status ? (
-                <span className="rounded bg-amber-500/20 border border-amber-500/40 px-2 py-0.5 font-mono text-[9px] font-semibold uppercase tracking-wider text-amber-300 backdrop-blur-md">
-                  • {p.status}
-                </span>
-              ) : (
-                <span className="rounded bg-emerald-500/20 border border-emerald-500/40 px-2 py-0.5 font-mono text-[9px] font-semibold uppercase tracking-wider text-emerald-300 backdrop-blur-md flex items-center gap-1">
-                  <span className="relative flex size-1.5">
-                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-60" />
-                    <span className="relative inline-flex size-1.5 rounded-full bg-emerald-500" />
-                  </span>
-                  Live
-                </span>
-              )}
-            </div>
-
-            {p.featured && (
-              <span className="rounded bg-amber-400/10 px-2 py-0.5 font-mono text-[9px] font-bold uppercase tracking-wider text-amber-500 border border-amber-500/30">
-                Featured
-              </span>
-            )}
-          </div>
-
-          {/* Angled Screenshot Image */}
+          {/* Project Screenshot */}
           {p.image && !imgError ? (
-            <div className="absolute -right-6 -bottom-3 w-56 h-32 sm:-right-12 sm:-bottom-5 sm:w-72 sm:h-40 rounded-lg border-4 border-[var(--bg)]/40 shadow-xl overflow-hidden group-hover:-right-4 group-hover:-bottom-1 sm:group-hover:-right-9 sm:group-hover:-bottom-2 transition-all duration-300 pointer-events-none">
+            <div className="absolute inset-3 rounded-lg border border-[var(--line)] shadow-xl overflow-hidden pointer-events-none">
               <img
                 src={p.image}
                 alt={`${p.title} preview`}
-                className="w-full h-full object-cover object-top"
+                className="w-full h-full object-cover object-center"
                 onError={() => setImgError(true)}
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-black/5" />
             </div>
           ) : (
             <div className="font-serif text-2xl text-[var(--fg)] self-end opacity-90">{p.title}</div>
