@@ -12,7 +12,7 @@ export function Projects({ isSearchable = false }: { isSearchable?: boolean }) {
   const displayedProjects = useMemo(() => {
     return site.projects.filter((p) => {
       // Category filter
-      if (projectTab === "Frontend" && !p.categories?.includes("Frontend")) return false;
+      if (projectTab === "Machine Learning" && !p.categories?.includes("Machine Learning")) return false;
       if (projectTab === "Backend" && !p.categories?.includes("Backend")) return false;
       if (projectTab === "Fullstack" && !p.categories?.includes("Fullstack")) return false;
       
@@ -36,7 +36,7 @@ export function Projects({ isSearchable = false }: { isSearchable?: boolean }) {
         aside={
           !isSearchable ? (
             <div className="flex gap-1 rounded-lg border border-[var(--line)] bg-[var(--chip)] p-0.5">
-              {["All", "Frontend", "Backend", "Fullstack"].map((tab) => (
+              {["All", "Machine Learning", "Backend", "Fullstack"].map((tab) => (
                 <button
                   key={tab}
                   type="button"
@@ -78,7 +78,7 @@ export function Projects({ isSearchable = false }: { isSearchable?: boolean }) {
             </div>
 
             <div className="flex gap-1 rounded-lg border border-[var(--line)] bg-[var(--chip)] p-0.5">
-              {["All", "Frontend", "Backend", "Fullstack"].map((tab) => (
+              {["All", "Machine Learning", "Backend", "Fullstack"].map((tab) => (
                 <button
                   key={tab}
                   type="button"

@@ -20,7 +20,7 @@ export function ProjectsPage() {
     if (q !== null) setSearchQuery(q);
   }, [searchParams]);
 
-  const categories = ["All", "Frontend", "Backend", "Fullstack"];
+  const categories = ["All", "Machine Learning", "Backend", "Fullstack"];
 
   const filteredProjects = useMemo(() => {
     return site.projects.filter((p) => {

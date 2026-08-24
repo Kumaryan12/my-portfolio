@@ -8,7 +8,7 @@ export type Project = {
   featured?: boolean;
   status?: string;
   image?: string;
-  categories?: ("Frontend" | "Backend" | "Fullstack")[];
+  categories?: ("Machine Learning" | "Backend" | "Fullstack")[];
 };
 
 export type Job = {
@@ -127,7 +127,7 @@ export const site = {
       year: "2026",
       links: { source: "https://github.com/Kumaryan12/nyaysetu" },
       image: "/projects/nyayasetu.jpg",
-      categories: ["Fullstack", "Backend"],
+      categories: ["Machine Learning", "Fullstack", "Backend"],
     },
     {
       title: "F1 Race Predictor",
@@ -139,7 +139,7 @@ export const site = {
       year: "2025 - Present",
       links: { source: "https://github.com/Kumaryan12/F1_prediction_2026" },
       image: "/projects/f1-race-predictor.jpg",
-      categories: ["Backend"],
+      categories: ["Machine Learning", "Backend"],
     },
     {
       title: "HostelMitra",
