@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { Shell, SectionHeader } from "@/components/Layout";
 import { site } from "@/config/site";
 import { ArrowUpRight } from "lucide-react";
-import { MediumIcon } from "@/components/icons";
 
 export function Writing() {
   if (!site.writing || site.writing.length === 0) return null;
@@ -10,19 +9,8 @@ export function Writing() {
   return (
     <div id="writing">
       <SectionHeader
-        title="Writing"
-        aside={
-          <a
-            href={(site.socials as any).medium}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1.5 font-mono text-[11px] text-[var(--soft)] hover:text-[var(--fg)] transition-colors group/header"
-          >
-            <MediumIcon className="size-3.5" />
-            <span className="hidden sm:inline">medium.com/@anuragdotdev</span>
-            <ArrowUpRight className="size-3 text-[var(--soft)] group-hover/header:translate-x-0.5 group-hover/header:-translate-y-0.5 transition-transform" />
-          </a>
-        }
+        title="Certifications"
+        aside={<span className="font-mono text-[10px] uppercase tracking-wider text-[var(--soft)]">Verified credentials</span>}
       />
       <Shell>
         <div className="divide-y divide-[var(--line)]">

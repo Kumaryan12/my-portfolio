@@ -7,43 +7,37 @@ import { Icon } from "@iconify/react";
 const CATEGORY_ICONS: Record<string, string> = {
   All: "lucide:layers",
   Languages: "lucide:code-2",
+  "ML & Data": "lucide:brain-circuit",
+  "Vision & NLP": "lucide:scan-search",
   Backend: "lucide:server",
-  Frontend: "lucide:layout",
-  Databases: "lucide:database",
-  "DevOps & Tools": "lucide:terminal",
+  Tools: "lucide:terminal",
 };
 
 const SKILL_ICONS: Record<string, string> = {
-  TypeScript: "logos:typescript-icon",
-  JavaScript: "logos:javascript",
-  React: "logos:react",
+  SQL: "lucide:database",
+  C: "logos:c",
   "Next.js": "logos:nextjs-icon",
-  "Node.js": "logos:nodejs-icon",
-  "Express.js": "logos:express",
-  "Tailwind CSS": "logos:tailwindcss-icon",
-  "Shadcn UI": "simple-icons:shadcnui",
+  PyTorch: "logos:pytorch-icon",
+  "scikit-learn": "logos:scikit-learn",
+  Pandas: "logos:pandas-icon",
+  NumPy: "logos:numpy",
   PostgreSQL: "logos:postgresql",
-  MongoDB: "logos:mongodb-icon",
-  Prisma: "logos:prisma",
   Supabase: "logos:supabase-icon",
   Firebase: "logos:firebase",
   "REST APIs": "lucide:cpu",
-  JWT: "logos:jwt-icon",
+  FastAPI: "logos:fastapi-icon",
   Git: "logos:git-icon",
   GitHub: "logos:github-icon",
-  Postman: "logos:postman-icon",
-  Vercel: "logos:vercel-icon",
-  Figma: "logos:figma",
   "C++": "logos:c-plusplus",
   Python: "logos:python",
 };
 
 const skillCategories: Record<string, string[]> = {
-  Languages: ["TypeScript", "JavaScript", "Python", "C++"],
-  Frontend: ["React", "Next.js", "Tailwind CSS", "Shadcn UI", "Figma"],
-  Backend: ["Node.js", "Express.js", "REST APIs", "JWT"],
-  Databases: ["PostgreSQL", "MongoDB", "Prisma", "Supabase", "Firebase"],
-  "DevOps & Tools": ["Git", "GitHub", "Postman", "Vercel"],
+  Languages: ["Python", "SQL", "C", "C++"],
+  "ML & Data": ["PyTorch", "scikit-learn", "Pandas", "NumPy"],
+  "Vision & NLP": ["YOLO", "SegFormer", "CNNs", "LSTMs", "GRUs", "Transformers", "XLM-R", "RAG", "ChromaDB"],
+  Backend: ["FastAPI", "REST APIs", "Firebase", "Supabase", "PostgreSQL", "Firestore"],
+  Tools: ["Git", "GitHub"],
 };
 
 export function TechStack() {
@@ -51,7 +45,7 @@ export function TechStack() {
 
   if (!site.skills.length) return null;
 
-  const categories = ["All", "Languages", "Frontend", "Backend", "Databases", "DevOps & Tools"];
+  const categories = ["All", "Languages", "ML & Data", "Vision & NLP", "Backend", "Tools"];
 
   const filteredSkills = activeCategory === "All"
     ? site.skills

@@ -15,10 +15,10 @@ export function Hero() {
   };
 
   const roles = [
-    "Full Stack Developer.",
-    "Backend Engineer.",
-    "Open Source Contributor.",
-    "Problem Solver."
+    "Machine Learning Engineer.",
+    "Computer Vision Researcher.",
+    "NLP & RAG Builder.",
+    "Software Engineer."
   ];
   const [roleIndex, setRoleIndex] = useState(0);
   const [currentText, setCurrentText] = useState("");

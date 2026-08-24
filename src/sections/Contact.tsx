@@ -10,7 +10,7 @@ export function Contact() {
     { label: "Twitter", href: site.socials.twitter, Icon: TwitterIcon },
     { label: "Mail", href: site.socials.email || `mailto:${site.email}`, Icon: MailIcon },
     { label: "Resume", href: site.socials.resume || "#", Icon: FileIcon },
-  ];
+  ].filter((link) => link.href);
 
   return (
     <div id="contact">

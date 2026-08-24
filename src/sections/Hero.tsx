@@ -5,10 +5,10 @@ import { site } from "@/config/site";
 import { MapPin, Search, RotateCw } from "lucide-react";
 
 const HEADLINE_TITLES = [
-  "Full Stack Developer",
-  "Backend Engineer",
-  "Open Source Contributor",
-  "Clean Code Advocate",
+  "Machine Learning Engineer",
+  "Computer Vision Researcher",
+  "NLP & RAG Builder",
+  "Software Engineer",
 ];
 
 export function Hero({ onOpenPalette }: { onOpenPalette?: () => void }) {
@@ -35,7 +35,7 @@ export function Hero({ onOpenPalette }: { onOpenPalette?: () => void }) {
         <div className="relative h-36 overflow-hidden rounded-xl bg-neutral-950 sm:h-44 border border-[var(--line)]">
           <img
             src={site.bannerImage}
-            alt="Steve Jobs at desk"
+            alt="Computing workspace"
             loading="eager"
             decoding="async"
             className="w-full h-full object-cover object-center opacity-65 grayscale"

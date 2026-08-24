@@ -13,7 +13,7 @@ import {
   Moon, 
   Sun, 
   ExternalLink,
-  BookOpen,
+  Award,
   Mail
 } from "lucide-react";
 import { GitHubIcon } from "./icons";
@@ -105,9 +105,9 @@ export function CommandPalette({
     {
       id: "nav-writing",
       category: "navigation",
-      title: "Go to Writing",
-      subtitle: "Technical articles & blog posts",
-      icon: <BookOpen size={16} />,
+      title: "Go to Credentials",
+      subtitle: "Certifications and achievements",
+      icon: <Award size={16} />,
       action: () => {
         navigate("/writing");
         handleClose();
@@ -143,17 +143,6 @@ export function CommandPalette({
       icon: theme === "dark" ? <Sun size={16} /> : <Moon size={16} />,
       action: () => {
         toggleTheme();
-        handleClose();
-      },
-    },
-    {
-      id: "action-medium",
-      category: "actions",
-      title: "Open Medium Profile",
-      subtitle: "medium.com/@anuragdotdev",
-      icon: <BookOpen size={16} />,
-      action: () => {
-        window.open((site.socials as any).medium, "_blank");
         handleClose();
       },
     },

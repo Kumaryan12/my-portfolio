@@ -60,7 +60,7 @@ export function GithubActivity() {
             {/* Info and stats at the bottom */}
             <div className="mt-2.5 flex items-center justify-between font-mono text-[11px] text-[var(--muted)]">
               <span>
-                {heatmap.live ? `${heatmap.total} contributions in the last year` : "500+ commits in the last year"}
+                {heatmap.live ? `${heatmap.total} contributions in the last year` : "Public GitHub activity"}
               </span>
               <span className="flex items-center gap-1.5">
                 Less
