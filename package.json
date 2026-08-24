@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && mkdir -p dist/server && cp server/index.js dist/server/index.js",
+    "build": "tsc && vite build",
     "preview": "vite preview",
     "lint": "tsc --noEmit"
   },
@@ -21,7 +21,6 @@
     "react-router-dom": "^6.29.0"
   },
   "devDependencies": {
-    "@openai/sites-vite-plugin": "^0.2.0",
     "@types/node": "^20.17.19",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
