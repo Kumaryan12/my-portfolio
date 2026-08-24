@@ -8,23 +8,23 @@ import { Code2, Terminal, Cpu, ShieldCheck } from "lucide-react";
 export function AboutPage() {
   const principles = [
     {
-      title: "Clean & Maintainable Code",
-      description: "I don't ship junk code. Maintainability isn't optional—it's foundational to building software that scales.",
+      title: "Evidence-Driven Machine Learning",
+      description: "I evaluate models with leakage-aware validation, meaningful baselines, and metrics that reflect how the system will be used.",
       icon: <Code2 className="text-emerald-400" size={24} />
     },
     {
-      title: "Backend Precision",
-      description: "I lean backend because I enjoy making polished frontend interfaces actually hold up under load with robust architecture.",
+      title: "End-to-End Engineering",
+      description: "I enjoy taking an idea from data preparation and modelling through APIs, interfaces, deployment, and real-world feedback.",
       icon: <Terminal className="text-indigo-400" size={24} />
     },
     {
-      title: "Continuous Learning",
-      description: "Currently diving deep into System Design, Distributed Systems, DSA, and DevOps to keep leveling up.",
+      title: "Research With Practical Impact",
+      description: "My strongest work connects modern ML methods to concrete problems in air-quality intelligence, legal aid, and predictive simulation.",
       icon: <Cpu className="text-purple-400" size={24} />
     },
     {
-      title: "User-Centered & Detail Obsessed",
-      description: "From micro-interactions and keyboard shortcuts to smooth transitions, every detail counts towards great UX.",
+      title: "Reliable, Responsible Systems",
+      description: "I value transparent evaluation, grounded outputs, guardrails, and maintainable implementations over impressive-looking demos alone.",
       icon: <ShieldCheck className="text-cyan-400" size={24} />
     }
   ];

@@ -40,7 +40,7 @@ export const site = {
   },
   profileImages: ["/profile-ak.png"],
   bannerImage: "/images/messi-header.webp",
-  socialBannerImage: "/social-banner.png",
+  socialBannerImage: "/images/messi-header.webp",
   initials: "AK",
   role: "Machine Learning & Software Engineer",
   location: "Goa, India",

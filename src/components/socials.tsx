@@ -113,7 +113,7 @@ export function Socials({ className = "" }: { className?: string }) {
                     {/* Banner header */}
                     <div className="relative h-20 w-full overflow-hidden flex items-center justify-center bg-neutral-950">
                       <img
-                        src={(site as any).socialBannerImage || "/banner.png"}
+                        src={(site as any).socialBannerImage || "/images/messi-header.webp"}
                         alt="Banner"
                         className="absolute inset-0 h-full w-full object-cover object-center"
                       />

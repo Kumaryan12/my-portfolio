@@ -32,52 +32,52 @@ const hoverCardsData: Record<string, {
   bannerGradient: string;
 }> = {
   github: {
-    handle: "@nodeanurag",
-    bio: "Full Stack Developer. Building products, learning technologies, shipping consistently. Obsessed with clean code.",
-    stats: ["5+ Projects", "500+ Contributions"],
+    handle: "@Kumaryan12",
+    bio: "Applied ML and software engineering across computer vision, NLP, data science, and full-stack systems.",
+    stats: ["3 Featured Projects", "Public Repositories"],
     bannerText: "learn • build • ship",
     bannerGradient: "from-neutral-900 to-neutral-800",
   },
   twitter: {
-    handle: "@anuragdotdev",
-    bio: "Building clean, modern web apps where design, functionality, and even the smallest details matter.",
-    stats: ["100+ Followers", "Tech bro"],
+    handle: "Aryan Kumar",
+    bio: "Machine learning, engineering, and research updates.",
+    stats: ["ML", "Engineering"],
     bannerText: "connect • share • grow",
     bannerGradient: "from-sky-900 to-indigo-900",
   },
   linkedin: {
     pronouns: "He/Him",
-    handle: "in/nodeanurag",
-    bio: "Frontend & Backend Developer. Experienced in React, Next.js, Node.js, and database systems.",
-    stats: ["Open for Work", "Delhi, India"],
+    handle: "in/kumaryan12",
+    bio: "ECE student at NIT Goa with a Computer Science minor and experience in applied machine learning.",
+    stats: ["Open to Work", "Goa, India"],
     bannerText: "network • build • impact",
     bannerGradient: "from-blue-900 to-blue-800",
   },
   medium: {
-    handle: "@anuragdotdev",
-    bio: "Writing technical articles about software development, system design, Next.js, and backend architecture.",
-    stats: ["Tech Writer", "Publications"],
+    handle: "Aryan Kumar",
+    bio: "Technical notes on machine learning, computer vision, and data systems.",
+    stats: ["ML", "Data Science"],
     bannerText: "write • share • read",
     bannerGradient: "from-neutral-800 to-zinc-950",
   },
   email: {
-    handle: "conveytoanurag@gmail.com",
-    bio: "Available for contract work, internship opportunities, and collaborative software engineering projects.",
+    handle: "kumararyan66472@gmail.com",
+    bio: "Available for internship opportunities, research collaborations, and software engineering projects.",
     stats: ["Fast Response", "Direct Email"],
     bannerText: "collab • contact • direct",
     bannerGradient: "from-rose-900 to-orange-900",
   },
   resume: {
     handle: "Curriculum Vitae",
-    bio: "View academic records (SIH Hackathon Winner), key developer skills, and internship details.",
-    stats: ["PDF Format", "1-Page Resume"],
+    bio: "View academic records, technical skills, projects, and internship details.",
+    stats: ["PDF Resume", "Current CV"],
     bannerText: "skills • experience • cv",
     bannerGradient: "from-teal-900 to-emerald-900",
   },
   discord: {
-    handle: "anurag.dev",
-    bio: "Join my server or drop a DM to chat about web dev, coding challenges, or side projects.",
-    stats: ["Developer Server", "Chat Active"],
+    handle: "Aryan Kumar",
+    bio: "Connect to discuss machine learning, research, or software projects.",
+    stats: ["Developer Chat", "Active DM"],
     bannerText: "hangout • chat • code",
     bannerGradient: "from-indigo-950 to-purple-900",
   },
@@ -123,7 +123,7 @@ export function Socials({ className = "" }: { className?: string }) {
                     {/* Banner header */}
                     <div className="relative h-20 w-full overflow-hidden flex items-center justify-center bg-neutral-950">
                       <img
-                        src={(site as any).socialBannerImage || "/social-banner.png"}
+                        src={(site as any).socialBannerImage || "/images/messi-header.webp"}
                         alt="Banner"
                         className="absolute inset-0 h-full w-full object-cover object-center"
                       />

@@ -49,7 +49,7 @@ export function ProjectsPage() {
             Projects & Work
           </h1>
           <p className="mt-3 text-neutral-400 text-lg max-w-2xl leading-relaxed">
-            A comprehensive gallery of products, developer tools, games, and web apps I&apos;ve engineered.
+            Applied machine-learning and software projects spanning NLP, predictive modelling, and full-stack systems.
           </p>
         </Reveal>
 

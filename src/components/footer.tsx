@@ -5,26 +5,7 @@ import { ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const QUOTES = [
-  {
-    text: "When something is important enough, you do it even if the odds are not in your favor.",
-    author: "Elon Musk",
-  },
-  {
-    text: "The biggest risk is not taking any risk.",
-    author: "Mark Zuckerberg",
-  },
-  {
-    text: "The people who are crazy enough to think they can change the world are the ones who do.",
-    author: "Steve Jobs",
-  },
-  {
-    text: "I’ve decided to become the Pirate King. If I die trying, then at least I die fighting for my dream.",
-    author: "Monkey D. Luffy",
-  },
-  {
-    text: "If you don't like your destiny, don't accept it.",
-    author: "Naruto Uzumaki",
-  },
+  site.quote,
 ];
 
 export function Footer() {
