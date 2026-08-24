@@ -127,6 +127,7 @@ export const site = {
       year: "2026",
       links: { source: "https://github.com/Kumaryan12/nyaysetu" },
       featured: true,
+      image: "/projects/nyayasetu.jpg",
       categories: ["Fullstack", "Backend"],
     },
     {
@@ -140,6 +141,7 @@ export const site = {
       links: { source: "https://github.com/Kumaryan12/F1_prediction_2026" },
       featured: true,
       status: "In Progress",
+      image: "/projects/f1-race-predictor.jpg",
       categories: ["Backend"],
     },
     {
@@ -155,6 +157,7 @@ export const site = {
         live: "https://hostelmitra-81b7d.web.app/",
       },
       featured: true,
+      image: "/projects/hostelmitra.jpg",
       categories: ["Fullstack", "Backend"],
     },
   ] as Project[],
