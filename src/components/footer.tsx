@@ -85,8 +85,18 @@ export function Footer() {
       <GapBand h="h-5" />
       <div className="w-full border-t border-[var(--line)]">
         <Shell className="border-b-0 px-6 py-8 text-center sm:px-8">
-          <p className="text-[14.5px] text-[var(--muted)]">
-            Designed &amp; Developed by <span className="font-semibold text-[var(--fg)]">{site.name}</span>
+          <p className="text-[14.5px] text-[var(--muted)] leading-relaxed">
+            Original design and codebase by{" "}
+            <a
+              href={site.credits.originalRepository}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-[var(--fg)] underline decoration-[var(--soft)] underline-offset-4 transition-opacity hover:opacity-70"
+            >
+              {site.credits.originalCreator}
+            </a>
+            . Redesigned, personalized, and maintained by{" "}
+            <span className="font-semibold text-[var(--fg)]">{site.name}</span>.
           </p>
           <p className="mt-1.5 font-mono text-[12px] text-[var(--soft)]">
             © {new Date().getFullYear()} All rights reserved.

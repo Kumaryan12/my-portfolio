@@ -219,6 +219,10 @@ export const site = {
     username: "Kumaryan12",
     contributionsLastYear: "Public",
   },
+  credits: {
+    originalCreator: "Anurag Jha",
+    originalRepository: "https://github.com/nodeanurag/my-portfolio",
+  },
   footerNote: "Built with curiosity and care",
 } as const;
 

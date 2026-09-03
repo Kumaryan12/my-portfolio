@@ -41,3 +41,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 ## Customization
 
 Portfolio content is maintained in [`src/config/site.ts`](src/config/site.ts).
+
+## Attribution
+
+This portfolio was redesigned and personalized by Aryan Satyendra Kumar from the original design and codebase created by Anurag Jha. The original repository is available at [nodeanurag/my-portfolio](https://github.com/nodeanurag/my-portfolio).
