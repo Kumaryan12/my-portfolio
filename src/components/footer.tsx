@@ -86,7 +86,7 @@ export function Footer() {
       <div className="w-full border-t border-[var(--line)]">
         <Shell className="border-b-0 px-6 py-8 text-center sm:px-8">
           <p className="text-[14.5px] text-[var(--muted)] leading-relaxed">
-            Original design and codebase by{" "}
+            Inspired by{" "}
             <a
               href={site.credits.originalRepository}
               target="_blank"
@@ -95,7 +95,7 @@ export function Footer() {
             >
               {site.credits.originalCreator}
             </a>
-            . Redesigned, personalized, and maintained by{" "}
+            . Redesigned by{" "}
             <span className="font-semibold text-[var(--fg)]">{site.name}</span>.
           </p>
           <p className="mt-1.5 font-mono text-[12px] text-[var(--soft)]">
