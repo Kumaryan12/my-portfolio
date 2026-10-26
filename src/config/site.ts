@@ -221,7 +221,7 @@ export const site = {
   },
   credits: {
     originalCreator: "Anurag Jha",
-    originalRepository: "https://github.com/nodeanurag/my-portfolio",
+    originalCreatorUrl: "https://www.linkedin.com/in/nodeanurag/",
   },
   footerNote: "Built with curiosity and care",
 } as const;

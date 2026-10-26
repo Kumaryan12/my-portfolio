@@ -88,7 +88,7 @@ export function Footer() {
           <p className="text-[14.5px] text-[var(--muted)] leading-relaxed">
             Inspired by{" "}
             <a
-              href={site.credits.originalRepository}
+              href={site.credits.originalCreatorUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="font-semibold text-[var(--fg)] underline decoration-[var(--soft)] underline-offset-4 transition-opacity hover:opacity-70"
